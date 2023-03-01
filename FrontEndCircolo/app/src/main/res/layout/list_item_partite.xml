@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/viewPartitaId"
+        android:layout_width="70dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Id Partita"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/viewIdSfi1"
+        android:layout_width="70dp"
+        android:layout_height="22dp"
+
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Id Bianco"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Deleteidview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/viewIdSfi2"
+        android:layout_width="30dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Id Nero"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Deletenomeview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+
+        android:id="@+id/viewTurnoPartita"
+        android:layout_width="75dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Turno"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Deleteluogoview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/viewRis1"
+        android:layout_width="50dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="P.bianco"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Deletedataview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/viewRis2"
+        android:layout_width="80dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="P.nero"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Deleteturniview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>

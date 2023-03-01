@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/scacchi"
+tools:context=".Amministratore.activity.ModificaPartitaSingolo"
+tools:layout_editor_absoluteX="0dp"
+tools:layout_editor_absoluteY="-48dp">
+
+<TextView
+    android:id="@+id/idPartitaModifica"
+    android:layout_width="262dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="84dp"
+    android:background="@drawable/input_bg"
+    android:gravity="center"
+    android:text="Id Partita"
+    android:textColor="@color/black"
+    android:textColorHint="@color/black"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.496"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/idSfidante1PartitaModificata"
+    android:layout_width="262dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/input_bg"
+    android:gravity="center"
+    android:text="Id Sfidante 1"
+    android:textColor="@color/black"
+    android:textColorHint="@color/black"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.496"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/idPartitaModifica" />
+
+<TextView
+    android:id="@+id/idSfidante2PartitaModificata"
+    android:layout_width="262dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/input_bg"
+    android:gravity="center"
+    android:text="Id Sfidante 2"
+    android:textColor="@color/black"
+    android:textColorHint="@color/black"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/idSfidante1PartitaModificata"/>
+
+    <TextView
+    android:id="@+id/turnoPartitaModificata"
+    android:layout_width="262dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/input_bg"
+    android:gravity="center"
+    android:text="Turno"
+    android:textColor="@color/black"
+    android:textColorHint="@color/black"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/idSfidante2PartitaModificata" />
+
+
+<EditText
+    android:id="@+id/RisSfi1PartitaModificata"
+    android:layout_width="262dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/input_bg"
+    android:gravity="center"
+    android:text="Risultato Bianco"
+    android:textColor="@color/black"
+    android:textColorHint="@color/black"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/turnoPartitaModificata" />
+
+<EditText
+    android:id="@+id/RisSfi2PartitaModificata"
+    android:layout_width="262dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/input_bg"
+    android:gravity="center"
+    android:text="Risultato Nero"
+    android:textColor="@color/black"
+    android:textColorHint="@color/black"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/RisSfi1PartitaModificata" />
+
+
+<Button
+    android:id="@+id/BtnPartitaModificata"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/bnt_cornice_white"
+    android:hint="Conferma Modifica"
+    android:shadowColor="@color/colorWhite"
+    android:text="Conferma Modifica"
+    android:textColor="@color/colorWhite"
+    android:textColorHint="@color/colorWhite"
+    app:backgroundTint="@null"
+    android:onClick="modificaRisultatoPartita"
+    app:layout_constraintEnd_toEndOf="@+id/RisSfi2PartitaModificata"
+    app:layout_constraintHorizontal_bias="0.473"
+    app:layout_constraintStart_toStartOf="@+id/RisSfi2PartitaModificata"
+    app:layout_constraintTop_toBottomOf="@+id/RisSfi2PartitaModificata"
+    app:rippleColor="@color/black" />
+
+<TextView
+    android:id="@+id/titoloidPartita"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="52dp"
+    android:hint="Id Partita"
+    android:shadowColor="@color/colorWhite"
+    android:text="Id Partita"
+    android:textColor="@color/colorWhite"
+    app:layout_constraintEnd_toEndOf="@+id/idPartitaModifica"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/idPartitaModifica"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/titoloIdSfidante1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:hint="Id Sfidante 1"
+    android:shadowColor="@color/colorWhite"
+    android:text="Id Sfidante 1"
+    android:textColor="@color/colorWhite"
+    app:layout_constraintEnd_toEndOf="@+id/idPartitaModifica"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/idPartitaModifica"
+    app:layout_constraintTop_toBottomOf="@+id/idPartitaModifica" />
+
+<TextView
+    android:id="@+id/titoloIdSfidante2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:hint="Id Sfidante 2 "
+    android:shadowColor="@color/colorWhite"
+    android:text="Id Sfidante 2 "
+    android:textColor="@color/colorWhite"
+    app:layout_constraintEnd_toEndOf="@+id/idSfidante2PartitaModificata"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/idSfidante2PartitaModificata"
+    app:layout_constraintTop_toBottomOf="@+id/idSfidante1PartitaModificata" />
+
+<TextView
+    android:id="@+id/titoloturnoPartitaModificata"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:hint="Turno"
+    android:shadowColor="@color/colorWhite"
+    android:text="Turno"
+    android:textColor="@color/colorWhite"
+    app:layout_constraintEnd_toEndOf="@+id/turnoPartitaModificata"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/turnoPartitaModificata"
+    app:layout_constraintTop_toBottomOf="@+id/idSfidante2PartitaModificata" />
+
+<TextView
+    android:id="@+id/titoloturni"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:hint="Ris. Bianco"
+    android:shadowColor="@color/colorWhite"
+    android:text="Ris. Bianco"
+    android:textColor="@color/colorWhite"
+    app:layout_constraintEnd_toEndOf="@+id/RisSfi1PartitaModificata"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/RisSfi1PartitaModificata"
+    app:layout_constraintTop_toBottomOf="@+id/turnoPartitaModificata" />
+
+<TextView
+    android:id="@+id/titoloturno"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:hint="Ris. Nero"
+    android:shadowColor="@color/colorWhite"
+    android:text="Ris. Nero"
+    android:textColor="@color/colorWhite"
+    app:layout_constraintEnd_toEndOf="@+id/RisSfi2PartitaModificata"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/RisSfi2PartitaModificata"
+    app:layout_constraintTop_toBottomOf="@+id/RisSfi1PartitaModificata" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

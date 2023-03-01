@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scacchi"
+    tools:context=".Amministratore.activity.ModifySingleTorneo"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-48dp">
+
+    <TextView
+        android:id="@+id/singlemodifyid"
+        android:layout_width="262dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
+        android:text="Id Torneo"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/singlemodifynome"
+        android:layout_width="262dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
+        android:text="Nome Torneo"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singlemodifyid" />
+
+    <EditText
+        android:id="@+id/singlemodifyluogo"
+        android:layout_width="262dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
+        android:text="Luogo Torneo"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singlemodifynome"/>
+
+    <EditText
+        android:id="@+id/singlemodifydata"
+        android:layout_width="262dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
+        android:text="Data Torneo"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singlemodifyluogo" />
+
+
+    <EditText
+        android:id="@+id/singlemodifyturni"
+        android:layout_width="262dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
+        android:text="Turni"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singlemodifydata" />
+
+    <EditText
+        android:id="@+id/singlemodifyturno"
+        android:layout_width="262dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
+        android:text="Turno attuale"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singlemodifyturni" />
+
+
+    <Button
+        android:id="@+id/Btnsinglemodify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bnt_cornice_white"
+        android:hint="Conferma Modifica"
+        android:shadowColor="@color/colorWhite"
+        android:text="Conferma Modifica"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        app:backgroundTint="@null"
+        android:onClick="modifySingleTorneo"
+        app:layout_constraintEnd_toEndOf="@+id/singlemodifyturno"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="@+id/singlemodifyturno"
+        app:layout_constraintTop_toBottomOf="@+id/singlemodifyturno"
+        app:rippleColor="@color/black" />
+
+    <TextView
+        android:id="@+id/titoloid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:hint="Id Torneo"
+        android:shadowColor="@color/colorWhite"
+        android:text="Id torneo: "
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/singlemodifyid"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/singlemodifyid"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titolonome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Nome Torneo:"
+        android:shadowColor="@color/colorWhite"
+        android:text="Nome Torneo: "
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/singlemodifynome"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/singlemodifynome"
+        app:layout_constraintTop_toBottomOf="@+id/singlemodifyid" />
+
+    <TextView
+        android:id="@+id/titololuogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Luogo:"
+        android:shadowColor="@color/colorWhite"
+        android:text="Luogo :"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/singlemodifyluogo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/singlemodifyluogo"
+        app:layout_constraintTop_toBottomOf="@+id/singlemodifynome" />
+
+    <TextView
+        android:id="@+id/titolodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Data:"
+        android:shadowColor="@color/colorWhite"
+        android:text="Data: "
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/singlemodifydata"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/singlemodifydata"
+        app:layout_constraintTop_toBottomOf="@+id/singlemodifyluogo" />
+
+    <TextView
+        android:id="@+id/titoloturni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="N. Turni: "
+        android:shadowColor="@color/colorWhite"
+        android:text="N Turni: "
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/singlemodifyturni"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/singlemodifyturni"
+        app:layout_constraintTop_toBottomOf="@+id/singlemodifydata" />
+
+    <TextView
+        android:id="@+id/titoloturno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Turno: "
+        android:shadowColor="@color/colorWhite"
+        android:text="Turno: "
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/singlemodifyturno"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/singlemodifyturno"
+        app:layout_constraintTop_toBottomOf="@+id/singlemodifyturni" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

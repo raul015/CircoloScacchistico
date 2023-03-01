@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<TextView
+    android:id="@+id/classificaIdTorneo"
+    android:layout_width="80dp"
+    android:layout_height="22dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:gravity="center"
+    android:text="Id Torneo"
+    android:textColor="@color/black"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/classificaIdUser"
+    android:layout_width="80dp"
+    android:layout_height="22dp"
+    android:layout_marginTop="20dp"
+    android:gravity="center"
+    android:text="Id Partecipante"
+    android:textColor="@color/black"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@+id/Deleteidview"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/classificaNome"
+    android:layout_width="80dp"
+    android:layout_height="22dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="20dp"
+    android:gravity="center"
+    android:text="Nome"
+    android:textColor="@color/black"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@+id/Deletenomeview"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/classificaPunteggio"
+    android:layout_width="80dp"
+    android:layout_height="22dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:gravity="center"
+    android:text="Punteggio Torneo"
+    android:textColor="@color/black"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@+id/Deleteluogoview"
+    app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>

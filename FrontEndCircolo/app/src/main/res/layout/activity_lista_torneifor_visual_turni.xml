@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/scacchi"
+android:scrollbarSize="4dp"
+tools:context=".Utente.activity.ListaTorneiforVisualTurni">
+
+
+<TextView
+    android:id="@+id/ViewClassificaTorneiUtente"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Visual Turni Tornei"
+    android:textColor="@color/colorWhite"
+    android:textSize="34sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.059" />
+
+<ListView
+    android:id="@+id/ListViewTorneiVisualTurno"
+    android:layout_width="371dp"
+    android:layout_height="533dp"
+    android:layout_marginTop="44dp"
+    android:background="@color/colorWhite"
+    app:layout_constraintEnd_toEndOf="@+id/ViewClassificaTorneiUtente"
+    app:layout_constraintHorizontal_bias="0.503"
+    app:layout_constraintStart_toStartOf="@+id/ViewClassificaTorneiUtente"
+    app:layout_constraintTop_toBottomOf="@+id/ViewClassificaTorneiUtente" />
+
+<TextView
+    android:id="@+id/ViewTornaMainAmministratore1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:hint="Torna al Main amministratore"
+    android:minHeight="48dp"
+    android:onClick="goToMainUtent"
+    android:textColor="@color/colorWhite"
+    android:textColorHint="@color/colorWhite"
+    android:textSize="16sp"
+    app:layout_constraintEnd_toEndOf="@+id/ListViewTorneiVisualTurno"
+    app:layout_constraintStart_toStartOf="@+id/ListViewTorneiVisualTurno"
+    app:layout_constraintTop_toBottomOf="@+id/ListViewTorneiVisualTurno" />
+
+<TextView
+    android:id="@+id/idviewClassificaTorneiUtente"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="90dp"
+    android:text="Id"
+    android:textColor="@color/colorWhite"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/nomeviewClassificaTorneiUtente"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="90dp"
+    android:text="Nome"
+    android:textColor="@color/colorWhite"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@+id/idviewClassificaTorneiUtente"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/viewluogodelete"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="40dp"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="90dp"
+    android:text="Luogo"
+    android:textColor="@color/colorWhite"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@+id/nomeviewClassificaTorneiUtente"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/dataviewClassificaTorneiUtente"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="90dp"
+    android:text="Data/Ora"
+    android:textColor="@color/colorWhite"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@+id/viewluogodelete"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/turniviewClassificaTorneiUtente"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="90dp"
+    android:text="Turni/o"
+    android:textColor="@color/colorWhite"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@+id/dataviewClassificaTorneiUtente"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<Button
+    android:id="@+id/ClassificaTorneiUtenteupedate"
+    android:layout_width="49dp"
+    android:layout_height="44dp"
+    android:layout_marginStart="290dp"
+    android:layout_marginLeft="290dp"
+    android:layout_marginTop="16dp"
+    android:drawableBottom="@drawable/ic_update"
+    android:onClick="UpdateTornei"
+    android:gravity="center"
+    android:text=""
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.933"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

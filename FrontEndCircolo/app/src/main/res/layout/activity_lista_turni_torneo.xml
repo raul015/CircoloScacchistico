@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/scacchi"
+android:scrollbarSize="4dp"
+tools:context=".Utente.activity.ListaTurniTorneo">
+
+
+<TextView
+    android:id="@+id/ViewListaTurniGiocatore"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Turni utente Torneo"
+    android:textColor="@color/colorWhite"
+    android:textSize="34sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.059" />
+
+<ListView
+    android:id="@+id/ListViewTurniTorneo"
+    android:layout_width="371dp"
+    android:layout_height="533dp"
+    android:layout_marginTop="32dp"
+    android:background="@color/colorWhite"
+    app:layout_constraintEnd_toEndOf="@+id/ViewListaTurniGiocatore"
+    app:layout_constraintHorizontal_bias="0.503"
+    app:layout_constraintStart_toStartOf="@+id/ViewListaTurniGiocatore"
+    app:layout_constraintTop_toBottomOf="@+id/ViewListaTurniGiocatore" />
+
+<TextView
+    android:id="@+id/ViewTornaMainAmministratorePartitaLista"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:hint="Torna al Main amministratore"
+    android:minHeight="48dp"
+    android:onClick="goToMainUtent"
+    android:textColor="@color/colorWhite"
+    android:textColorHint="@color/colorWhite"
+    android:textSize="16sp"
+    app:layout_constraintEnd_toEndOf="@+id/ListViewTurniTorneo"
+    app:layout_constraintStart_toStartOf="@+id/ListViewTurniTorneo"
+    app:layout_constraintTop_toBottomOf="@+id/ListViewTurniTorneo" />
+
+<TextView
+    android:id="@+id/idviewModificaPartitaLista"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="90dp"
+    android:text="Id Partita"
+    android:textColor="@color/colorWhite"
+    android:textSize="15sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/biancoviewModificaPartitaLista"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="90dp"
+    android:text="Bianco"
+    android:textColor="@color/colorWhite"
+    android:textSize="15sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@+id/idviewModificaPartitaLista"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/neroviewModificaPartitaLista"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="90dp"
+    android:text="Nero"
+    android:textColor="@color/colorWhite"
+    android:textSize="15sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@+id/biancoviewModificaPartitaLista"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/turnoviewModificaPartitaLista"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="90dp"
+    android:text="Turno"
+    android:textColor="@color/colorWhite"
+    android:textSize="15sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@+id/neroviewModificaPartitaLista"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/risBiancoviewModificaPartitaLista"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="90dp"
+    android:text="Ris.Bianco"
+    android:textColor="@color/colorWhite"
+    android:textSize="15sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@+id/turnoviewModificaPartitaLista"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/risNeroviewModificaPartitaLista"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="90dp"
+    android:text="Ris.Nero"
+    android:textColor="@color/colorWhite"
+    android:textSize="15sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@+id/risBiancoviewModificaPartitaLista"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<Button
+    android:id="@+id/modificaupedateListaPartite"
+    android:layout_width="49dp"
+    android:layout_height="44dp"
+    android:layout_marginStart="290dp"
+    android:layout_marginLeft="290dp"
+    android:layout_marginTop="16dp"
+    android:drawableBottom="@drawable/ic_update"
+    android:onClick="BottoneUpdateListaTurni"
+    android:gravity="center"
+    android:text=""
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.933"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scacchi"
+    tools:context=".Amministratore.activity.GeneraSingoloTurno"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-48dp">
+
+    <TextView
+        android:id="@+id/NuovoTurnoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuovo Turno"
+        android:textColor="@color/colorWhite"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059" />
+
+
+    <TextView
+        android:id="@+id/titoloTurnoAttuale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="244dp"
+        android:hint="Turno Attuale"
+        android:shadowColor="@color/colorWhite"
+        android:text="Turno Attuale"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/generaTurno_turnoAttuale"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="@+id/generaTurno_turnoAttuale"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/titoloGeneraTurno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="244dp"
+        android:hint="Genera Turno"
+        android:shadowColor="@color/colorWhite"
+        android:text="Genera Turno"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/NuovoTurnoBtn"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/NuovoTurnoBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/generaTurno_turnoAttuale"
+        android:layout_width="127dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="264dp"
+        android:layout_marginLeft="264dp"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/singledeletenome"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/NuovoTurnoBtn"
+        android:layout_width="64dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="288dp"
+        android:onClick="GeneraNuovoTurno"
+        android:src="@drawable/ic_freccia_bianca"
+        app:layout_constraintEnd_toStartOf="@+id/generaTurno_turnoAttuale"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/statoTorneoGeneraTurno"
+        android:layout_width="127dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="584dp"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
+        android:onClick="cambiaStato"
+        android:text="Stato Torneo"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/AvvisoStato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Testo"
+        app:layout_constraintEnd_toEndOf="@+id/statoTorneoGeneraTurno"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="@+id/statoTorneoGeneraTurno"
+        app:layout_constraintTop_toBottomOf="@+id/statoTorneoGeneraTurno" />
+
+
+    <TextView
+        android:id="@+id/titoloTerminaTurno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="372dp"
+        android:hint="Termina Turno"
+        android:shadowColor="@color/colorWhite"
+        android:text="Termina Turno"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/TerminaTurnoBtn"
+        app:layout_constraintStart_toStartOf="@+id/TerminaTurnoBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/TerminaTurnoBtn"
+        android:layout_width="64dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="408dp"
+        android:onClick="TerminaTurnoAttuale"
+        android:src="@drawable/ic_termina"
+        app:layout_constraintEnd_toEndOf="@+id/generaTurno_turnoAttuale"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/generaTurno_turnoAttuale"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/ClassificaTurnoAttuale"
+        android:layout_width="64dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="408dp"
+        android:onClick="visualizzaClassifica"
+        android:src="@drawable/ic_classifica_bianco"
+        app:layout_constraintEnd_toEndOf="@+id/NuovoTurnoBtn"
+        app:layout_constraintStart_toStartOf="@+id/NuovoTurnoBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titoloClassificaAttuale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="372dp"
+        android:hint="Classifica"
+        android:shadowColor="@color/colorWhite"
+        android:text="Classifica"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/ClassificaTurnoAttuale"
+        app:layout_constraintStart_toStartOf="@+id/ClassificaTurnoAttuale"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

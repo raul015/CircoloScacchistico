@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scacchi"
+    tools:context=".Amministratore.activity.DeleteSingleTorneo"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-48dp">
+
+    <TextView
+        android:id="@+id/singledeleteid"
+        android:layout_width="262dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
+        android:text="Id Torneo"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/singledeletenome"
+        android:layout_width="262dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
+        android:text="Nome Torneo"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singledeleteid" />
+
+    <TextView
+        android:id="@+id/singledeleteluogo"
+        android:layout_width="262dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
+        android:text="Luogo Torneo"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singledeletenome"/>
+
+    <TextView
+        android:id="@+id/singledeletedata"
+        android:layout_width="262dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
+        android:text="Data Torneo"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singledeleteluogo" />
+
+
+    <TextView
+        android:id="@+id/singledeleteturni"
+        android:layout_width="262dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
+        android:text="Turni"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singledeletedata" />
+
+    <TextView
+        android:id="@+id/singledeleteturno"
+        android:layout_width="262dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
+        android:text="Turno attuale"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singledeleteturni" />
+
+
+    <Button
+        android:id="@+id/Btnsingledelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bnt_cornice_white"
+        android:hint="Conferma Eliminazione"
+        android:shadowColor="@color/colorWhite"
+        android:text="Conferma Eliminazione"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        app:backgroundTint="@null"
+        android:onClick="deleteSingleTorneo"
+        app:layout_constraintEnd_toEndOf="@+id/singledeleteturno"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="@+id/singledeleteturno"
+        app:layout_constraintTop_toBottomOf="@+id/singledeleteturno"
+        app:rippleColor="@color/black" />
+
+    <TextView
+        android:id="@+id/titoloid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:hint="Id Torneo"
+        android:shadowColor="@color/colorWhite"
+        android:text="Id torneo: "
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/singledeleteid"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/singledeleteid"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titolonome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Nome Torneo:"
+        android:shadowColor="@color/colorWhite"
+        android:text="Nome Torneo: "
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/singledeletenome"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/singledeletenome"
+        app:layout_constraintTop_toBottomOf="@+id/singledeleteid" />
+
+    <TextView
+        android:id="@+id/titololuogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Luogo:"
+        android:shadowColor="@color/colorWhite"
+        android:text="Luogo :"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/singledeleteluogo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/singledeleteluogo"
+        app:layout_constraintTop_toBottomOf="@+id/singledeletenome" />
+
+    <TextView
+        android:id="@+id/titolodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Data:"
+        android:shadowColor="@color/colorWhite"
+        android:text="Data: "
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/singledeletedata"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/singledeletedata"
+        app:layout_constraintTop_toBottomOf="@+id/singledeleteluogo" />
+
+    <TextView
+        android:id="@+id/titoloturni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="N. Turni: "
+        android:shadowColor="@color/colorWhite"
+        android:text="N Turni: "
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/singledeleteturni"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/singledeleteturni"
+        app:layout_constraintTop_toBottomOf="@+id/singledeletedata" />
+
+    <TextView
+        android:id="@+id/titoloturno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Turno: "
+        android:shadowColor="@color/colorWhite"
+        android:text="Turno: "
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/singledeleteturno"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/singledeleteturno"
+        app:layout_constraintTop_toBottomOf="@+id/singledeleteturni" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

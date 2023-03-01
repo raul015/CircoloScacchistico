@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/scacchi"
+tools:context=".Utente.activity.activity_utente_elimina_singola_iscrizione"
+tools:layout_editor_absoluteX="0dp"
+tools:layout_editor_absoluteY="-48dp">
+
+<TextView
+    android:id="@+id/iscrizionedeleteid"
+    android:layout_width="262dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="84dp"
+    android:background="@drawable/input_bg"
+    android:gravity="center"
+    android:text="Id Torneo"
+    android:textColor="@color/black"
+    android:textColorHint="@color/black"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.496"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/iscrizionedeletenome"
+    android:layout_width="262dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/input_bg"
+    android:gravity="center"
+    android:text="Nome Torneo"
+    android:textColor="@color/black"
+    android:textColorHint="@color/black"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.496"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/iscrizionedeleteid" />
+
+<TextView
+    android:id="@+id/iscrizionedeleteluogo"
+    android:layout_width="262dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/input_bg"
+    android:gravity="center"
+    android:text="Luogo Torneo"
+    android:textColor="@color/black"
+    android:textColorHint="@color/black"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/iscrizionedeletenome"/>
+
+<TextView
+    android:id="@+id/iscrizionedeletedata"
+    android:layout_width="262dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/input_bg"
+    android:gravity="center"
+    android:text="Data Torneo"
+    android:textColor="@color/black"
+    android:textColorHint="@color/black"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/iscrizionedeleteluogo" />
+
+
+<TextView
+    android:id="@+id/iscrizionedeleteturni"
+    android:layout_width="262dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/input_bg"
+    android:gravity="center"
+    android:text="Turni"
+    android:textColor="@color/black"
+    android:textColorHint="@color/black"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/iscrizionedeletedata" />
+
+<TextView
+    android:id="@+id/iscrizionedeleteturno"
+    android:layout_width="262dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/input_bg"
+    android:gravity="center"
+    android:text="Turno attuale"
+    android:textColor="@color/black"
+    android:textColorHint="@color/black"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/iscrizionedeleteturni" />
+
+
+<Button
+    android:id="@+id/Btniscrizionedelete"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/bnt_cornice_white"
+    android:hint="Cancella iscrizione"
+    android:shadowColor="@color/colorWhite"
+    android:text="Cancella iscrizione"
+    android:textColor="@color/colorWhite"
+    android:textColorHint="@color/colorWhite"
+    app:backgroundTint="@null"
+    android:onClick="deleteIscrizioneTorneo"
+    app:layout_constraintEnd_toEndOf="@+id/iscrizionedeleteturno"
+    app:layout_constraintHorizontal_bias="0.473"
+    app:layout_constraintStart_toStartOf="@+id/iscrizionedeleteturno"
+    app:layout_constraintTop_toBottomOf="@+id/iscrizionedeleteturno"
+    app:rippleColor="@color/black" />
+
+<TextView
+    android:id="@+id/iscrizionetitoloid"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="52dp"
+    android:hint="Id Torneo"
+    android:shadowColor="@color/colorWhite"
+    android:text="Id torneo: "
+    android:textColor="@color/colorWhite"
+    app:layout_constraintEnd_toEndOf="@+id/iscrizionedeleteid"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/iscrizionedeleteid"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/iscrizionetitolonome"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:hint="Nome Torneo:"
+    android:shadowColor="@color/colorWhite"
+    android:text="Nome Torneo: "
+    android:textColor="@color/colorWhite"
+    app:layout_constraintEnd_toEndOf="@+id/iscrizionedeletenome"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/iscrizionedeletenome"
+    app:layout_constraintTop_toBottomOf="@+id/iscrizionedeleteid" />
+
+<TextView
+    android:id="@+id/iscrizionetitololuogo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:hint="Luogo:"
+    android:shadowColor="@color/colorWhite"
+    android:text="Luogo :"
+    android:textColor="@color/colorWhite"
+    app:layout_constraintEnd_toEndOf="@+id/iscrizionedeleteluogo"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/iscrizionedeleteluogo"
+    app:layout_constraintTop_toBottomOf="@+id/iscrizionedeletenome" />
+
+<TextView
+    android:id="@+id/iscrizionetitolodata"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:hint="Data:"
+    android:shadowColor="@color/colorWhite"
+    android:text="Data: "
+    android:textColor="@color/colorWhite"
+    app:layout_constraintEnd_toEndOf="@+id/iscrizionedeletedata"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/iscrizionedeletedata"
+    app:layout_constraintTop_toBottomOf="@+id/iscrizionedeleteluogo" />
+
+<TextView
+    android:id="@+id/iscrizionetitoloturni"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:hint="N. Turni: "
+    android:shadowColor="@color/colorWhite"
+    android:text="N Turni: "
+    android:textColor="@color/colorWhite"
+    app:layout_constraintEnd_toEndOf="@+id/iscrizionedeleteturni"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/iscrizionedeleteturni"
+    app:layout_constraintTop_toBottomOf="@+id/iscrizionedeletedata" />
+
+<TextView
+    android:id="@+id/iscrizionetitoloturno"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:hint="Turno: "
+    android:shadowColor="@color/colorWhite"
+    android:text="Turno: "
+    android:textColor="@color/colorWhite"
+    app:layout_constraintEnd_toEndOf="@+id/iscrizionedeleteturno"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/iscrizionedeleteturno"
+    app:layout_constraintTop_toBottomOf="@+id/iscrizionedeleteturni" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

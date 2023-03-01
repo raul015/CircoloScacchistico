@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/scacchi"
+android:scrollbarSize="4dp"
+tools:context=".Amministratore.activity.ModificaPartita">
+
+
+<TextView
+    android:id="@+id/ViewModificaPartitaTorneo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Modifica Partite Torneo"
+    android:textColor="@color/colorWhite"
+    android:textSize="34sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.059" />
+
+<ListView
+    android:id="@+id/ListViewTorneiPartita"
+    android:layout_width="371dp"
+    android:layout_height="533dp"
+    android:layout_marginTop="44dp"
+    android:background="@color/colorWhite"
+    app:layout_constraintEnd_toEndOf="@+id/ViewModificaPartitaTorneo"
+    app:layout_constraintHorizontal_bias="0.503"
+    app:layout_constraintStart_toStartOf="@+id/ViewModificaPartitaTorneo"
+    app:layout_constraintTop_toBottomOf="@+id/ViewModificaPartitaTorneo" />
+
+<TextView
+    android:id="@+id/ViewTornaMainAmministratorePartita"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:hint="Torna al Main amministratore"
+    android:minHeight="48dp"
+    android:onClick="goToMainAdministrator"
+    android:textColor="@color/colorWhite"
+    android:textColorHint="@color/colorWhite"
+    android:textSize="16sp"
+    app:layout_constraintEnd_toEndOf="@+id/ListViewTorneiPartita"
+    app:layout_constraintStart_toStartOf="@+id/ListViewTorneiPartita"
+    app:layout_constraintTop_toBottomOf="@+id/ListViewTorneiPartita" />
+
+<TextView
+    android:id="@+id/idviewTorneoPartita"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="90dp"
+    android:text="Id"
+    android:textColor="@color/colorWhite"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/nomeviewTorneoPartita"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="90dp"
+    android:text="Nome"
+    android:textColor="@color/colorWhite"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@+id/idviewTorneoPartita"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/viewluogoTorneoPartita"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="40dp"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="90dp"
+    android:text="Luogo"
+    android:textColor="@color/colorWhite"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@+id/nomeviewTorneoPartita"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/dataviewTorneoPartita"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="90dp"
+    android:text="Data/Ora"
+    android:textColor="@color/colorWhite"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@+id/viewluogoTorneoPartita"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/turniviewTorneoPartita"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="90dp"
+    android:text="Turni/o"
+    android:textColor="@color/colorWhite"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@+id/dataviewTorneoPartita"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/TorneoPartitaupdate"
+        android:layout_width="49dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:drawableBottom="@drawable/ic_update"
+        android:gravity="center"
+        android:onClick="BottoneUpdatePartiteTornei"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
