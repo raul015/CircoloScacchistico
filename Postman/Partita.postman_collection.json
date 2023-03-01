@@ -1,0 +1,270 @@
+{
+	"info": {
+		"_postman_id": "2ed46d44-b75f-4e58-9639-eab18a65d641",
+		"name": "Partita",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25026545"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/v1/Partita",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXVsMDE1OTdAZ21haWwuY29tIiwiaWF0IjoxNjc2ODEwMzExLCJleHAiOjE2NzY4MTE3NTF9.6aHtUDUld3Uy2IytbBVj197xdlAlt8n1XGfZhRMcp58",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"id_sfidante1\" : \"1\",\r\n    \"id_sfidante2\" : \"3\",\r\n    \"turno\" : \"1\",\r\n    \"torneo\" :{\r\n        \"id_torneo\":\"1\"\r\n    } \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Partita/Nuovo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Partita",
+						"Nuovo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/Partita/Get",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb3JmYWl0IiwiaWF0IjoxNjc3NTc0MjcxLCJleHAiOjE2Nzc1NzU3MTF9.C_q1rz3nBgASyNdyv9ws4rnSgXkA9SQxgs6-gSgCICc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Partita/Get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Partita",
+						"Get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/Partita/AggiuntaAutomatica",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXVsMDE1OTdAZ21haWwuY29tIiwiaWF0IjoxNjc2NDY2MDUwLCJleHAiOjE2NzY0Njc0OTB9.cvpyYHsoKK2GnOkrAM_YdhP0YnDMraUzbNSVWfF1LZk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idtorneo\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Partita/AggiuntaAutomatica",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Partita",
+						"AggiuntaAutomatica"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/Partita/AggiuntaAutomatica",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXVsMDE1OTdAZ21haWwuY29tIiwiaWF0IjoxNjc2ODEwMzExLCJleHAiOjE2NzY4MTE3NTF9.6aHtUDUld3Uy2IytbBVj197xdlAlt8n1XGfZhRMcp58",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"idtorneo\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Partita/AggiuntaAutomatica",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Partita",
+						"AggiuntaAutomatica"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/Partita/ModifyRisultato",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXVsMDE1OTdAZ21haWwuY29tIiwiaWF0IjoxNjc3NjYwODM4LCJleHAiOjE2Nzc2NjIyNzh9.BfckFlBEk-pMnpwiHiaWy3jjg7d_DABRfGwiWWFLix0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_partita\" : \"3\",\r\n    \"punti_bianco\" : \"0.5\",\r\n    \"punti_nero\" : \"0.5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Partita/ModifyRisultato",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Partita",
+						"ModifyRisultato"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/Partita/GetByTorneoId",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb3JmYWl0IiwiaWF0IjoxNjc3NTk0OTQyLCJleHAiOjE2Nzc1OTYzODJ9.-c6I0MIhV-L3lEYC45yezT7un2_bE76h7mvqoxGIPPY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"idtorneo\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Partita/GetByTorneoId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Partita",
+						"GetByTorneoId"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

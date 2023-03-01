@@ -1,0 +1,564 @@
+{
+	"info": {
+		"_postman_id": "5671c9e4-17d9-4b94-8f2a-42ea758e641d",
+		"name": "Torneo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25026545"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/v1/Torneo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb3JmYWl0IiwiaWF0IjoxNjc3NTc0MjcxLCJleHAiOjE2Nzc1NzU3MTF9.C_q1rz3nBgASyNdyv9ws4rnSgXkA9SQxgs6-gSgCICc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Torneo/Get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Torneo",
+						"Get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/Torneo/Nuovo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXVsMDE1OTdAZ21haWwuY29tIiwiaWF0IjoxNjc2MzA3NDg3LCJleHAiOjE2NzYzMDg5Mjd9.b2mzm69jHXH9iYhRqaVEuUXKrxou5cb3g7-ROegPk6g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"nome_torneo\" : \"1 torneo\",\r\n\"data_torneo\" : \"05-05-2023 15:30\",\r\n\"luogo\": \"excelsior\",\r\n\"numero_turni\" : 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Torneo/Nuovo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Torneo",
+						"Nuovo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/Torneo/Elimina",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXVsMDE1OTdAZ21haWwuY29tIiwiaWF0IjoxNjc2MzYyNDYxLCJleHAiOjE2NzYzNjM5MDF9.RBZIiYJA8RKhghIgMPWZGRH_3ABy5mE2yD4s64NPN9k",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_torneo\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Torneo/Elimina",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Torneo",
+						"Elimina"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/Torneo/ModificaData",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXVsMDE1OTdAZ21haWwuY29tIiwiaWF0IjoxNjc1ODUwMzI1LCJleHAiOjE2NzU4NTE3NjV9.qGklZDe-ZEYGCBKZCL9CjxlQ0U_mYwXxMndL59M7Td4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_torneo\":\"1\",\r\n    \"data_torneo\": \"15-10-1997 09:30\"   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Torneo/ModificaData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Torneo",
+						"ModificaData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/Torneo/ModificaLuogo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXVsMDE1OTdAZ21haWwuY29tIiwiaWF0IjoxNjc1MzQ4Mzk1LCJleHAiOjE2NzUzNDk4MzV9.7O5LEghxUYx4E_ZKAX_3rfxA-GQDFiQWXuV0-xlJIxs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_torneo\" : \"1\",\r\n    \"luogo\" : \"Stadio\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Torneo/ModificaLuogo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Torneo",
+						"ModificaLuogo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/Torneo/ModificaNTurni",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXVsMDE1OTdAZ21haWwuY29tIiwiaWF0IjoxNjc1MzQ4Mzk1LCJleHAiOjE2NzUzNDk4MzV9.7O5LEghxUYx4E_ZKAX_3rfxA-GQDFiQWXuV0-xlJIxs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_torneo\" : \"1\",\r\n    \"numero_turni\" : \"4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Torneo/ModificaNTurni",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Torneo",
+						"ModificaNTurni"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/Torneo/ModificaTurno",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb3JmYWl0IiwiaWF0IjoxNjc3NDkwODE3LCJleHAiOjE2Nzc0OTIyNTd9.DI-R7E4_Uj-wLsHEMUb2S5fxDUy6eVvv4-JFXwlTpUE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_torneo\" : \"1\",\r\n    \"turno_attuale\" : \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Torneo/ModificaTurno",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Torneo",
+						"ModificaTurno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/Torneo/ModificaNome",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXVsMDE1OTdAZ21haWwuY29tIiwiaWF0IjoxNjc1ODUwMzI1LCJleHAiOjE2NzU4NTE3NjV9.qGklZDe-ZEYGCBKZCL9CjxlQ0U_mYwXxMndL59M7Td4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_torneo\" : \"1\",\r\n    \"nome_torneo\" : \"Torneo provinciale Bergamo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Torneo/ModificaNome",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Torneo",
+						"ModificaNome"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/Torneo/GetIscrizioni",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb3JmYWl0IiwiaWF0IjoxNjc3NTczMzAxLCJleHAiOjE2Nzc1NzQ3NDF9.c1KuCDzDXI6XKnkTN9FvA5IuB7N3Jnan7pUKu4WO3ls",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_torneo\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Torneo/GetIscrizioni",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Torneo",
+						"GetIscrizioni"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/Torneo/GetTorneo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb3JmYWl0IiwiaWF0IjoxNjc3NDg5NzQ4LCJleHAiOjE2Nzc0OTExODh9.4zi2lwr2X8TIA7l1gcdNMepInoNfhy7EpJLQb722XQg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_torneo\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Torneo/GetTorneo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Torneo",
+						"GetTorneo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/Torneo/ModificaStato",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb3JmYWl0IiwiaWF0IjoxNjc3NTc0MjcxLCJleHAiOjE2Nzc1NzU3MTF9.C_q1rz3nBgASyNdyv9ws4rnSgXkA9SQxgs6-gSgCICc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_torneo\" : \"1\",\r\n    \"in_corso\" : \"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Torneo/ModificaStato",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Torneo",
+						"ModificaStato"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/Torneo/GeneraTurno",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb3JmYWl0IiwiaWF0IjoxNjc3NTc0MjcxLCJleHAiOjE2Nzc1NzU3MTF9.C_q1rz3nBgASyNdyv9ws4rnSgXkA9SQxgs6-gSgCICc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_torneo\": \"1\",\r\n    \"turno_attuale\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Torneo/GeneraTurno",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Torneo",
+						"GeneraTurno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/Torneo/Classifica",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb3JmYWl0IiwiaWF0IjoxNjc3NTc0MjcxLCJleHAiOjE2Nzc1NzU3MTF9.C_q1rz3nBgASyNdyv9ws4rnSgXkA9SQxgs6-gSgCICc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_torneo\" : \"1\",\r\n    \"turno_attuale\" : \"1\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Torneo/Classifica",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Torneo",
+						"Classifica"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXVsMDE1OTdAZ21haWwuY29tIiwiaWF0IjoxNjc1OTU4OTMzLCJleHAiOjE2NzU5NjAzNzN9.Rd222auxLO5c8nfYJ7O5FHWP_aTZ1c8-gMTEuJ8O4ks",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

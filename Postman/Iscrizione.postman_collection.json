@@ -1,0 +1,329 @@
+{
+	"info": {
+		"_postman_id": "7c42310b-fbc8-4117-814f-001f98044ccf",
+		"name": "Iscrizione",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25026545"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/v1/Iscrizione/Get",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb3JmYWl0IiwiaWF0IjoxNjc3NTczMzAxLCJleHAiOjE2Nzc1NzQ3NDF9.c1KuCDzDXI6XKnkTN9FvA5IuB7N3Jnan7pUKu4WO3ls",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Iscrizione/Get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Iscrizione",
+						"Get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/Iscrizione/Nuovo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb3JmYWl0IiwiaWF0IjoxNjc3MjQ2NjI4LCJleHAiOjE2NzcyNDgwNjh9.ieRS8Mb_bI25d6f_2bx2w582IiW8FptAN0UzxtaBd6U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"user\":{\r\n        \"id_user\" : \"3\"\r\n    },\r\n    \"torneo\" :{\r\n        \"id_torneo\":\"2\"\r\n    } \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Iscrizione/Nuovo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Iscrizione",
+						"Nuovo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/Iscrizione/AggiornaPunteggio",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXVsMDE1OTdAZ21haWwuY29tIiwiaWF0IjoxNjc2MTMwNzQxLCJleHAiOjE2NzYxMzIxODF9.7Ib4LFvE5JZH5m3NyJWqxgIo9ETdR5eXKJ7g-rBO7Dg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_utente\" : \"1\",\r\n    \"id_torneo\" : \"1\",\r\n    \"id_iscrizione\": \"1\",\r\n    \"punteggio\" : \"1\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Iscrizione/AggiornaPunteggio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Iscrizione",
+						"AggiornaPunteggio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/Iscrizione/CercaById",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb3JmYWl0IiwiaWF0IjoxNjc3NTczMzAxLCJleHAiOjE2Nzc1NzQ3NDF9.c1KuCDzDXI6XKnkTN9FvA5IuB7N3Jnan7pUKu4WO3ls",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Iscrizione/CercaById",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Iscrizione",
+						"CercaById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/Iscrizione/RiempiTorneo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXVsMDE1OTdAZ21haWwuY29tIiwiaWF0IjoxNjc3Njg5NjUyLCJleHAiOjE2Nzc2OTEwOTJ9.8ExLf9KTqcidziw8K3zYGBf9gtn571N48yEG5783Wg0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Iscrizione/RiempiTorneo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Iscrizione",
+						"RiempiTorneo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/Iscrizione/GetByUserId",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXVsMDE1OTdAZ21haWwuY29tIiwiaWF0IjoxNjc3Njg5NjUyLCJleHAiOjE2Nzc2OTEwOTJ9.8ExLf9KTqcidziw8K3zYGBf9gtn571N48yEG5783Wg0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"7\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Iscrizione/GetByUserId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Iscrizione",
+						"GetByUserId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/Iscrizione/Elimina",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb3JmYWl0IiwiaWF0IjoxNjc3MjM0MzkyLCJleHAiOjE2NzcyMzU4MzJ9.HY7MQoCAY-FD4zzGqzslnaLIACMyh23nQ7kLTPtU4-c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_partita\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Iscrizione/Elimina",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Iscrizione",
+						"Elimina"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/Iscrizione/Elimina",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb3JmYWl0IiwiaWF0IjoxNjc3MjQ0MjY5LCJleHAiOjE2NzcyNDU3MDl9.4t-mLXC_y5zyngRQv8UFPV1nk7XDPpP-4gYtrBUHL9s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/Iscrizione/EliminaIscrizione",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Iscrizione",
+						"EliminaIscrizione"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

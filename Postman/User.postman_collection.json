@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "814f1a48-6f50-4952-bea8-ebd2bf6d7dde",
+		"name": "User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25026545"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/v1/User/Get",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXVsMDE1OTdAZ21haWwuY29tIiwiaWF0IjoxNjc3NjAyODgwLCJleHAiOjE2Nzc2MDQzMjB9.mJyLEvzd-Eco_zgG1SFALwpm8jUaGj6RJ-mmBcyzW2k",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/User/Get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"User",
+						"Get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/User/GetUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXVsMDE1OTdAZ21haWwuY29tIiwiaWF0IjoxNjc2NzQ5ODEyLCJleHAiOjE2NzY3NTEyNTJ9.zucuHZZx4kw8GXYFQj6QS8MbVoWuH9LAxFDmrNJ5ksk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/User/GetUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"User",
+						"GetUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/User/Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXVsMDE1OTdAZ21haWwuY29tIiwiaWF0IjoxNjc2MzY0NTExLCJleHAiOjE2NzYzNjU5NTF9.Y5Zw_B9JGdee2o8SCUMPu7EFkAlC3lS_CVIsCKzoqg8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/User/Delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"User",
+						"Delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
