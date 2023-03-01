@@ -1,0 +1,2 @@
+Package creato per fornire almeno due endpoints
+dove l'user può creare un account  o può autenticarsi
