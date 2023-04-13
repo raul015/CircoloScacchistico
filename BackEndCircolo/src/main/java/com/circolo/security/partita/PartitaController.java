@@ -16,7 +16,7 @@ import jakarta.transaction.Transactional;
 
 @RestController
 @RequestMapping(path="/api/v1/Partita")
-public class PartitaController {
+public class PartitaController implements PartitaChessClubInterface{
 	
 	
 	private final PartitaService partitaService;

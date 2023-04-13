@@ -21,7 +21,7 @@ import jakarta.transaction.Transactional;
 
 @RestController
 @RequestMapping(path="/api/v1/Torneo")
-public class TorneoController {
+public class TorneoController implements TorneoChessClubInterface{
 
 	private final  TorneoService torneoSevice;
 	

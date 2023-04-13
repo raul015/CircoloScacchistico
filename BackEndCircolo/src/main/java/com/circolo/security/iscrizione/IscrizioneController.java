@@ -18,7 +18,7 @@ import jakarta.transaction.Transactional;
 
 @RestController
 @RequestMapping(path="/api/v1/Iscrizione")
-public class IscrizioneController {
+public class IscrizioneController implements IscrizioneChessClubInterface{
 	
 	private final IscrizioneService iscrizioneService;
 	
