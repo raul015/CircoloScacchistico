@@ -14,6 +14,7 @@ import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
@@ -33,7 +34,7 @@ import lombok.NoArgsConstructor;
 public class Torneo {
 		
 	  @Id
-	  @GeneratedValue
+	  @GeneratedValue(strategy = GenerationType.IDENTITY)
 	  private Integer id_torneo; 
 	  
 	  
@@ -54,7 +55,7 @@ public class Torneo {
 	  @Default 
 	  private boolean in_corso = false;
 	  
-	  Torneo(String nome_torneo,LocalDateTime data_torneo, String luogo, Integer numero_turni){
+	  public Torneo(String nome_torneo,LocalDateTime data_torneo, String luogo, Integer numero_turni){
 		  
 		  this.nome_torneo = nome_torneo;
 		  this.data_torneo = data_torneo;
@@ -69,6 +70,11 @@ public class Torneo {
 		 
 	  }
 	  
+	  
+	  public void setId_torneo(Integer nuovo_id) {
+		  this.id_torneo = nuovo_id;
+		  
+	  }
 	  // Ogni torneo ha più iscrizioni ha più iscrizioni, tocca a me gestirli, Lista inizializzata
 	  
 		@OneToMany(mappedBy = "torneo",
