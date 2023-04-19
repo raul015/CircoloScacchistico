@@ -15,6 +15,7 @@ public interface PartitaChessClubInterface {
 	
 	@GetMapping("/Get")
 	public ResponseEntity<List<Partita>>getIscrizione();
+	
 	@PostMapping("/GetByTorneoId")
 	public ResponseEntity<List<Partita>> getPartitaById(@RequestBody PartitaRequestByIdTorneo richiesta);
 	

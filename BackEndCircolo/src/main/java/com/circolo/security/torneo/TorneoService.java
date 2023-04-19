@@ -382,7 +382,6 @@ public class TorneoService {
 					.build();	
 			
 		}
-		
 
 		if(torneo.getNumero_turni() < richiesta.getTurno_attuale() || richiesta.getTurno_attuale() <= 0 ) {
 			
@@ -400,8 +399,6 @@ public class TorneoService {
 					.build();	
 			
 		}
-		
-		
 		
 		List<Partita> partite_torneo = new ArrayList<>();
 		
@@ -437,8 +434,7 @@ public class TorneoService {
 		List<Iscrizione> partecipanti = new ArrayList<>();
 		partecipanti = torneo.getIscrizioni();
 		
-		
-		if(presente == false) { // Devo sovrascrivere...
+		if(presente == false) {  // Devo sovrascrivere...
 						
 			// La mia lista è stata ordinata in base al punteggio... Ora posso generare il nuovo turno... con le nuove partite
 			
@@ -522,12 +518,11 @@ public class TorneoService {
 
 						j++;
 						
-						System.out.println("modifica delel partite");
+						System.out.println("modifica delle partite");
 		
 					}
 					
 				}	
-				
 				
 			return TorneoResponse.builder()
 			.risposta("le partite del turno sono state generate correttamente")
