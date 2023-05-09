@@ -77,6 +77,8 @@ public class User implements UserDetails {
   // mi restituisce una lista di Role, quindi definisco un role di
   //sopra 
   
+  
+  // Autorità concessa 
   @Override
   public Collection<? extends GrantedAuthority> getAuthorities() {
     return List.of(new SimpleGrantedAuthority(role.name()));

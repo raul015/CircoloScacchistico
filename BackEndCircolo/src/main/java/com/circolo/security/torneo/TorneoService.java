@@ -434,7 +434,7 @@ public class TorneoService {
 		List<Iscrizione> partecipanti = new ArrayList<>();
 		partecipanti = torneo.getIscrizioni();
 		
-		if(presente == false) {  // Devo sovrascrivere...
+		if(presente == false) { 
 						
 			// La mia lista è stata ordinata in base al punteggio... Ora posso generare il nuovo turno... con le nuove partite
 			
@@ -478,7 +478,7 @@ public class TorneoService {
 						
 		}
 		
-		// Presente = true, quindi sto rigenerando le partite 
+		
 		else {
 			
 				if(torneo.getTurno_attuale() == 1) {

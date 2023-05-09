@@ -60,7 +60,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     final String userEmail; // definito per il check sul db, lo estraggo la JWT  token
     
     /*
-     *  primo check non passato, quindi la request e la response vengon
+     *  primo check non passato, quindi la request e la response vengono
      *	delegati al prossimo filtro, quindi non continuo con l'esecuzione 
      */
     if (authHeader == null ||!authHeader.startsWith("Bearer ")) {
@@ -80,9 +80,9 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     	
       UserDetails userDetails = this.userDetailsService.loadUserByUsername(userEmail);
       
-      // Controllo se il token è ancora valido 
-      
-      if (jwtService.isTokenValid(jwt, userDetails)) {
+      // Controllo se il token è ancora valido, ed inoltre vedo se il token è associato correttamente all'user
+     
+      if (jwtService.isTokenValid(jwt, userDetails)) { // Qui inizia la tipica SpringSecurity
     	  // Classe di cui ha bisogno spring per aggiornare la security context
         UsernamePasswordAuthenticationToken authToken = new UsernamePasswordAuthenticationToken(
             userDetails,

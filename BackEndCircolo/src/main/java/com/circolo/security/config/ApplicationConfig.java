@@ -41,14 +41,46 @@ public class ApplicationConfig {
    * AuthenticationProvider è il Data Access Object che è responsabile
    * di andare a prendere UserDetails e codificare la password
    * 
+   * 
    */
-
+  
+  /* ProviderManager delega ad una lista di
+   * istanze di AuthenticationProvider.
+   * Ogni AuthenticationProvider ha l'opportunità di indicare
+   * che l'autenticazione deve avere successo, fallire
+   * o indicare che non può prendere una decisione 
+   * e consentire a un AuthenticationProvider downstream 
+   * di decidere.
+   * 
+   * In pratica ogni AuthenticationProvider
+   *  sa come eseguire uno specifico tipo di autenticazione
+   */
+  
+  
+  /*AuthenticationProvider 
+   * Puoi inserire più istanze di AuthenticationProviders 
+   * in ProviderManager. Ogni AuthenticationProvider 
+   * esegue un tipo specifico di autenticazione. 
+   * Ad esempio, DaoAuthenticationProvider supporta
+   *  l'autenticazione basata su nome utente/password,
+   *   mentre JwtAuthenticationProvider supporta l'autenticazione
+   *    di un token JWT
+   * 
+   */
+  /* DaoAuthenticationProvider è un implementazione
+   *  AuthenticationProvider  che utilizza UserDetailService e 
+   *  PasswordEncoder per autenticare username e password
+   * 
+   * 
+   */
   @Bean
-  public AuthenticationProvider authenticationProvider() {
+  public AuthenticationProvider authenticationProvider() { // setto il tipo di AuthenticationProvider che in questo caso è di tipo DAO
     DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
     //Diciamo quale DetailsService utilizzare per prendere informazioni
     // sul nostro user perhcé avremmo tante implementazioni di 
     //User details
+    
+    // Dao ha bisogno di username e password...
     authProvider.setUserDetailsService(userDetailsService());
     authProvider.setPasswordEncoder(passwordEncoder());
     return authProvider;
@@ -56,11 +88,11 @@ public class ApplicationConfig {
 
   @Bean
   public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
-    return config.getAuthenticationManager();
+    return config.getAuthenticationManager(); // mi dice che tipo di autenticazione sto utilizzando
   }
 
   @Bean
-  public PasswordEncoder passwordEncoder() {
+  public PasswordEncoder passwordEncoder() { // Utile per AuthenticationProvider
     return new BCryptPasswordEncoder();
   }
 

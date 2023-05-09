@@ -48,7 +48,8 @@ public class JwtService {
       Map<String, Object> extraClaims,
       UserDetails userDetails
   ) {
-    return Jwts
+	  // Dopo setClaims(extraClaims) ho i claims che posso estrarre per i miei controlli
+    return Jwts	
         .builder()
         .setClaims(extraClaims)
         .setSubject(userDetails.getUsername())
@@ -57,6 +58,7 @@ public class JwtService {
         .signWith(getSignInKey(), SignatureAlgorithm.HS256)
         .compact();
   }
+  
 
   /*
    * Ho bisogno di Userdetails perché  devo controllare se questo token

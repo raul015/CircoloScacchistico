@@ -29,6 +29,8 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @RequiredArgsConstructor
 public class SecurityConfiguration {
 
+	// Qui sono presenti i due filtri di autenticazione che utilizzo 
+	
   private final JwtAuthenticationFilter jwtAuthFilter;
   private final AuthenticationProvider authenticationProvider;
   
@@ -59,6 +61,8 @@ public class SecurityConfiguration {
    * -	Scelta dell'AuthenticationProvider che voglio usare 
    */
 
+  // Catena di filtri utilizzati
+  
   @Bean
   public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
     http
