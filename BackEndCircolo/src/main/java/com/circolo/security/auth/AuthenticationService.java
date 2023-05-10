@@ -55,7 +55,6 @@ public class AuthenticationService {
     );
     var user = repository.findByEmail(request.getEmail())
         .orElseThrow();
-    
   
     var jwtToken = jwtService.generateToken(user);
     return AuthenticationResponse.builder()
@@ -65,19 +64,14 @@ public class AuthenticationService {
         .firstname(user.getFirstname())
         .lastname(user.getLastname())
         .build();
-  }
-  
-  
+  }  
   
   public PasswordResponse password(PasswordRequest request) {
-	  
 	  
 	    if(repository.findByEmail(request.getEmail()).isPresent()){
 	    	
 		    var user = repository.findByEmail(request.getEmail())
 		            .orElseThrow();
-		    	
-		    
 		    
 		    if(user.getFirstname().equalsIgnoreCase(request.getFirstname())  && user.getLastname().equalsIgnoreCase(request.getLastname()) ) {
 		    	
