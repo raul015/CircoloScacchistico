@@ -7,3 +7,6 @@ Nello specifico si vuole permettere all'utente di iscriversi ad un torneo, visua
 affrontare durante il torneo, visualizzazione delle classifiche per turno.
 All'amministratore invece sarà permesso di creare tornei ,cancellare tornei ,modificare tornei, inserimento
 dei punteggi per partita ed infine creare la classifica per renderla poi disponibile agli utenti.
+
+# Autori
+Raul Luizaga & Emanuele Rizzi
