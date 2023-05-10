@@ -9,4 +9,7 @@ All'amministratore invece sarà permesso di creare tornei ,cancellare tornei ,mo
 dei punteggi per partita ed infine creare la classifica per renderla poi disponibile agli utenti.
 
 # Autori
-Raul Luizaga & Emanuele Rizzi
+* **Raul Luizaga**
+* **Emanuele Rizzi**
+
+
